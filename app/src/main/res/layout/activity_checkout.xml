@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/bgriwayat"
+    android:padding="16dp"
+    tools:context=".CheckoutActivity">
+
+    <TextView
+        android:id="@+id/textTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Transaksi"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTotal"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp." />
+
+        <TextView
+            android:id="@+id/totalCheckout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textPembayaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear1"
+        android:layout_marginTop="30dp"
+        android:text="Jumlah Pembayaran"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/pembayaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textPembayaran"
+        android:hint="0.00"
+        android:inputType="number"
+        android:maxLength="9"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textKembali"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pembayaran"
+        android:layout_marginTop="30dp"
+        android:text="Kembali"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textKembali"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp." />
+
+        <TextView
+            android:id="@+id/kembalian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear2"
+        android:layout_marginTop="30dp"
+        android:text="Checkout" />
+
+</RelativeLayout>

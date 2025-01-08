@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Nama Baru"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"/>
+        <EditText
+            android:id="@+id/inputNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rectangle_button"
+            android:padding="15dp"
+            android:inputType="textPersonName"
+            android:textSize="15dp"
+            android:hint="New Name"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:layout_marginBottom="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Username Baru"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"/>
+        <EditText
+            android:id="@+id/inputUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rectangle_button"
+            android:padding="15dp"
+            android:inputType="text"
+            android:textSize="15dp"
+            android:hint="New Username"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:layout_marginBottom="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Password Baru"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"/>
+        <EditText
+            android:id="@+id/inputPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rectangle_button"
+            android:padding="15dp"
+            android:inputType="textPassword"
+            android:textSize="15dp"
+            android:hint="New Password"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rectangle_button"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:text="Update"
+            android:layout_marginBottom="15dp"/>
+
+
+    </LinearLayout>
+</LinearLayout>
